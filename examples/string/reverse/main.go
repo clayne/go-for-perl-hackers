@@ -17,7 +17,7 @@ func main() {
 
 func viaSplit(before string) string {
 	list := strings.Split(before, "")
-	reverseList := []string{}
+	var reverseList []string
 	for i := len(list) - 1; i >= 0; i-- {
 		reverseList = append(reverseList, list[i])
 	}
