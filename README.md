@@ -806,6 +806,7 @@ func main() {
 	fmt.Println(contentAsString)
 }
 ```
+
 [https://go.dev/play/p/DKsQJmS5yuf](https://go.dev/play/p/DKsQJmS5yuf)
 
 #### Constants
@@ -1455,6 +1456,15 @@ func main() {
 ```
 
 [Go Playground](https://go.dev/play/p/qjgoHlvYWfY)
+
+Note: `litter` has some [global configuration
+values](https://github.com/sanity-io/litter?tab=readme-ov-file#configuration)
+which you may find helpful. For instance, by default it hides private fields,
+but this can be disabled:
+
+```go
+litter.Config.HidePrivateFields = false
+```
 
 #### To disk (append)
 
